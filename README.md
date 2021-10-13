@@ -1,0 +1,1 @@
+This is for ijse Rapid Web Application Development module assignments.
