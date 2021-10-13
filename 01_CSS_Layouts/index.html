@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS LAYOUTS</title>
+    <link rel="stylesheet" href="../assets/css/normalize.css">
+    <style>
+        body>section {
+            height: 400px;
+        }
+
+        section>div{
+            width: calc(100%/3);
+            height: 400px;
+            position: absolute;
+        }
+        section > div:nth-child(1) {
+            background-color: darkorange;
+            left: 0;
+        }
+
+        section > div:nth-child(2){
+            background-color: blue;
+            left: calc(100%/3);
+
+        }
+
+        section > div:nth-child(3){
+            background-color: crimson;
+            left: calc((100%/3)*2);
+        }
+    </style>
+</head>
+<body>
+<section>
+    <div></div>
+    <div></div>
+    <div></div>
+</section>
+</body>
+</body>
+</html>
