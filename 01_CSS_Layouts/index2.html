@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Positions</title>
+  <link rel="stylesheet" href="../assets/css/normalize.css">
+  <style>
+    body>section{
+      width: 100vw;
+      height: 100vh;
+      position: relative;
+    }
+
+    .sub{
+      height: calc(100%/2);
+      width: calc(100%/2);
+      position: absolute;
+    }
+
+    body>section>section:nth-child(1){
+      background-color: red;
+      left: 0;
+    }
+
+    body>section>section:nth-child(2){
+      background-color: green;
+      left: calc(100%/2);
+
+    }
+
+    body>section>section:nth-child(3){
+      background-color: darkorange;
+      left: 0;
+      bottom: 0;
+    }
+
+    body>section>section:nth-child(4){
+      background-color: crimson;
+      left: calc(100%/2);
+      bottom: 0;
+    }
+
+    .square{
+        height:80px;
+        width: 80px;
+        background-color: crimson;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: auto;
+    }
+
+    .circle{
+        height: 140px;
+        width: 140px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: auto;
+        background-color: aliceblue;
+        border-radius: 100%;
+    }
+
+    #square{
+      height: 140px;
+      width: 140px;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      margin: auto;
+      background-color: aliceblue;
+    }
+
+    #circle{
+      height: 100px;
+      width: 100px;
+      background-color: crimson;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      margin: auto;
+      border-radius: 50px;
+    }
+
+    body>section>aside{
+        height: 70px;
+        width: 70px;
+        background-color: aliceblue;
+        position: absolute;
+    }
+    body>section>aside:nth-child(6){
+        border-bottom-right-radius: 100%;
+    }
+    body>section>aside:nth-child(7){
+        right: 0;
+        top: 0;
+        border-bottom-left-radius: 100%;
+
+    }
+    body>section>aside:nth-child(8){
+        bottom: 0;
+        left: 0;
+        border-top-right-radius: 100%;
+    }
+    body>section>aside:nth-child(9){
+        bottom: 0;
+        right: 0;
+        border-top-left-radius: 100%;
+    }
+    body>section>div{
+        height: 50px;
+        width: 100px;
+        position: absolute;
+        background-color: aliceblue;
+    }
+    body>section>div:nth-child(10){
+        top: 0;
+        right: 0;
+        left: 0;
+        margin: auto;
+        border-bottom-left-radius: 100px;
+        border-bottom-right-radius: 100px;
+    }
+    body>section>div:nth-child(11){
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: auto;
+        border-top-left-radius: 100px;
+        border-top-right-radius: 100px;
+    }
+  </style>
+</head>
+<body>
+<section>
+  <section class="sub">
+      <div class="circle">
+          <div class="square"></div>
+    </div>
+  </section>
+
+  <section class="sub">
+      <div class="circle">
+          <div class="square"></div>
+    </div>
+  </section>
+
+  <section class="sub">
+      <div class="circle">
+          <div class="square"></div>
+    </div>
+  </section>
+
+  <section class="sub">
+      <div class="circle">
+          <div class="square"></div>
+    </div>
+  </section>
+
+  <div id="square">
+    <div id="circle"></div>
+  </div>
+
+<aside></aside>
+<aside></aside>
+<aside></aside>
+<aside></aside>
+<div></div>
+<div></div>
+
+</section>
+</body>
+</html>
