@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+}
+header{
+    position: relative;
+        height: 50px;
+        box-shadow: 0px 0px 20px -4px black;
+}
+body > header > img {
+    position: relative;
+    height: 50px;
+    left: 10px;
+
+}
+header>ul {
+    position: absolute;
+    display: inline-block;
+    right: 15px;
+}
+header>ul>li {
+    display: inline-block;
+    margin-right: 15px;
+}
+main{
+    position: relative;
+}
+main>nav{
+    position: absolute;
+    background-color: darkblue;
+    width: 200px;
+    bottom: 0;
+    top: 0;
+}
+li{
+    font-size: 15px;
+    font-family: 'Ubuntu', sans-serif;
+    cursor: pointer;
+}
+main>nav>ul{
+    padding-top: 20px;
+}
+main>nav>ul>li{
+    margin: 20px;
+    color: aliceblue;
+    list-style: none;
+}
+
+main>section{
+    margin-left: 200px;
+    padding:10px ;
+}
+main>section>div{
+    position: relative;
+    width: 100%;
+    border: 1px solid darkblue;
+
+}
+img{
+    position: relative;
+    width: 200px;
+    margin: 0;
+    padding: 0;
+}
+p{
+display: block;
+}
+body>footer{
+    height: 50px;
+    background-color: darkgray;
+    padding: 0;
+}
+body>footer>h2{
+    text-align: center;
+    margin: 0;
+    color: #eeeeee;
+    padding: 10px;
+}
+main>section>section{
+    position: relative;
+    height: 300px;
+}
+main>section>section>div {
+    width: calc(100%/3);
+    height: 100%;
+    position: absolute;
+    background: url("../img/gif.gif");
+    background-size: cover;
+    background-position: center;
+}
+main>section>section>div:nth-child(1){
+
+}
+main>section>section>div:nth-child(2){
+    left: calc((100%/3)*1);
+}
+main>section>section>div:nth-child(3){
+    left: calc((100%/3)*2);
+}
